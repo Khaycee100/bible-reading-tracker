@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Suggestion · Psalms & Proverbs{% endblock %}
+{% block content %}
+  <h2>Here’s Your Chapter</h2>
+  <p>So {{ first_name }}, you’ll be reading <strong>{{ book.upper() }}</strong> Chapter <strong>{{ chapter }}</strong> today!</p>
+
+  <form method="post" action="{{ url_for('confirm') }}">
+    <button type="submit">I’m okay with this ✅</button>
+  </form>
+
+  <p class="hint">(Go back and click “Suggest Chapter” again if you want a new one.)</p>
+  <p><a href="{{ url_for('dashboard') }}">← Back</a></p>
+{% endblock %}

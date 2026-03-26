@@ -1,0 +1,19 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Segoe UI Emoji"; }
+body { margin: 0; padding: 0; background: #f8fafc; }
+.container { max-width: 840px; margin: 2rem auto; padding: 0 1rem; }
+h1, h2, h3 { margin: 0 0 1rem; }
+.card { background: white; padding: 1rem; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.06); margin-bottom: 1rem; }
+label { display: block; margin: .5rem 0; }
+input[type="text"] { width: 100%; padding: .75rem; border-radius: 12px; border: 1px solid #d0d7de; }
+button, .button { display: inline-block; padding: .6rem 1rem; border-radius: 12px; border: none; background: #0f766e; color: white; text-decoration: none; cursor: pointer; }
+.button.secondary { background: #334155; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.flashes { margin-bottom: 1rem; }
+.flash { padding: .75rem 1rem; border-radius: 12px; }
+.flash.error { background: #fee2e2; }
+.flash.success { background: #dcfce7; }
+.flash.info { background: #e0f2fe; }
+.muted { color: #64748b; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { background: #f1f5f9; padding: .35rem .6rem; border-radius: 999px; }
+.hint { color: #64748b; font-size: .95rem; }

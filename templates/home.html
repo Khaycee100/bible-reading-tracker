@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Welcome · Psalms & Proverbs{% endblock %}
+{% block content %}
+  <h1>Psalm & Proverbs Chapter Recommender</h1>
+  <p>Welcome! Get a random chapter to read daily and track your progress.</p>
+
+  <form method="post" action="{{ url_for('start') }}" class="card">
+    <label for="full_name">Enter your first & last name:</label>
+    <input type="text" id="full_name" name="full_name" placeholder="Kelechi Okoroafor" required />
+    <button type="submit">Continue</button>
+  </form>
+{% endblock %}
